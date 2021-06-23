@@ -16,6 +16,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Adjust Lables
         if: ${{env.projects_enabled}} == true
-        uses: technote-space/auto-card-labeler@v1
+        uses: technote-space/auto-card-labeler@v2.0.2
         with:
           CONFIG_FILENAME: ${{env.projects_cardsConfig}}
